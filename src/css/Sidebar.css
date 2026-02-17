@@ -19,11 +19,34 @@
   margin-bottom: 20px;
 }
 
-/* Menu */
-
 .menu {
   flex: 1;
 }
+
+/* ================= MAIN MODULE STYLE ================= */
+
+.menu > .menu-item {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Main hover */
+
+.menu > .menu-item:hover {
+  background: linear-gradient(to right, #e3ebff, #f0f4ff);
+  color: #2f5be3;
+}
+
+/* Active main module */
+
+.menu > .menu-item.active {
+  background: linear-gradient(to right, #3b6edc, #4a7dff);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(59,110,220,0.25);
+}
+
+/* ================= BASE MENU ================= */
 
 .menu-item {
   display: flex;
@@ -50,12 +73,57 @@
 .menu-icon {
   width: 18px;
   text-align: center;
+  font-size: 16px;
 }
 
-/* Footer */
+/* ================= SUBMENU PREMIUM DESIGN ================= */
+
+.submenu {
+  padding-left: 20px;
+  margin: 6px 0;
+  border-left: 2px solid #dbe5ff;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.submenu .menu-item {
+  font-size: 13px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 6px;
+  background: #f4f7ff;
+  color: #444;
+  transition: all 0.2s ease;
+}
+
+.submenu .menu-item:hover {
+  background: linear-gradient(to right, #e3ebff, #f0f4ff);
+  color: #2f5be3;
+  transform: translateX(5px);
+}
+
+.submenu .menu-item.active {
+  background: linear-gradient(to right, #3b6edc, #4a7dff);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(59,110,220,0.3);
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= FOOTER ================= */
 
 .sidebar-footer {
-  position: relative;
   margin-top: auto;
 }
 
@@ -64,8 +132,6 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-  z-index: 2;
-  position: relative;
 }
 
 .avatar {
@@ -81,32 +147,12 @@
   font-weight: bold;
 }
 
-.user-card p {
-  margin: 0;
-  font-size: 12px;
-  color: #777;
-}
-
 .logout {
   font-size: 13px;
   color: #888;
   cursor: pointer;
-  margin-bottom: 10px;
-  z-index: 2;
-  position: relative;
 }
 
 .logout:hover {
   color: #f46a6a;
-}
-
-/* Factory background image */
-
-.factory-bg {
-  width: 100%;
-  opacity: 0.35;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
 }
