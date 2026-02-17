@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.select-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f6f8fc, #eef2f7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* top right dots */
+.logo-dots {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 22px;
+  color: #ff6b6b;
+}
+
+.select-title {
+  font-size: 34px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.select-subtitle {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.select-card {
+  width: 520px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  padding: 26px 26px 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.card-title {
+  text-align: left;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.search-box {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #d8deea;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.company-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2c3e50;
+}
+
+.select-btn {
+  padding: 7px 16px;
+  background: linear-gradient(to right, #3b6edc, #2f5fd0);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.select-btn:hover {
+  opacity: 0.95;
+}
+
+/* background factory image */
+.factory-bg {
+  position: absolute;
+  bottom: -40px;
+  width: 900px;
+  max-width: 95%;
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+}

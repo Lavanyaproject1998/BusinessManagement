@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f6f8fc, #eef2f7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* logo dots top right */
+.logo-dots {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 22px;
+  color: #ff6b6b;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 35px;
+}
+
+.login-card {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 32px 30px 26px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  z-index: 2;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e5ee;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 18px;
+  background: #fafbfe;
+}
+
+.input-group span {
+  margin-right: 10px;
+  color: #9aa3b2;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3b6edc, #2f5fd0);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #3b6edc;
+  text-decoration: none;
+}
+
+.error {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+/* Background factory image */
+.factory-bg {
+  position: absolute;
+  bottom: -40px;
+  width: 900px;
+  max-width: 95%;
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+}
